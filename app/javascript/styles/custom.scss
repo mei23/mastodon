@@ -1,0 +1,12 @@
+
+//$classic-base-color: #300;  // red
+//$classic-base-color: #030;  // green
+//$classic-base-color: #330;  // yellow
+//$classic-base-color: #003;  // blue
+//$classic-base-color: #303;  // magenta
+$classic-base-color: #023;  // cyan
+
+$ui-base-color: $classic-base-color !default;
+$ui-base-lighter-color: lighten($ui-base-color, 26%) !default;
+
+@import 'application';
