@@ -3,7 +3,7 @@ module Mastodon
   module Version
     module_function
     def source_base_url
-      'https://github.com/mei23/mastodon/tree/mei1'
+      'https://github.com/mei23/mastodon/tree/mei2'
     end
   end
 end
