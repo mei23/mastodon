@@ -1,1 +1,5 @@
 default: styles/custom.scss
+mei_red: styles/mei_red.scss
+mei_magenta: styles/mei_magenta.scss
+mei_green: styles/mei_green.scss
+

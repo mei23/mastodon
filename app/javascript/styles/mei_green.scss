@@ -1,0 +1,12 @@
+
+// Define colors
+$mei-dark-green: #030;  // green
+$mei_light-orange: #e90;
+
+$ui-base-color: $mei-dark-green !default;                        // Darkest
+$ui-base-lighter-color: lighten($mei-dark-green, 16%) !default;  // Lighter darkest
+$ui-highlight-color: $mei_light-orange !default;                // Vibrant
+
+@import 'application';
+
+@import 'restore_form';

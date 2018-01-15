@@ -1,0 +1,51 @@
+
+$org-base-color: #282c37 !default;                        // Darkest
+$org-base-lighter-color: lighten(#282c37, 26%) !default;  // Lighter darkest
+
+.compose-form {
+  .compose-form__buttons-wrapper {
+    .icon-button {
+      color: $org-base-lighter-color;
+      
+      &:hover,
+      &:active,
+      &:focus {
+          color: lighten($org-base-color, 33%);
+      }
+      
+      &.disabled {
+        color: lighten($org-base-color, 13%);
+      }
+      
+      &.inverted {
+        color: lighten($org-base-color, 33%);
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: $org-base-lighter-color;
+        }
+      }
+    }
+
+    .text-icon-button {
+      color: lighten($org-base-color, 33%);
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $org-base-lighter-color;
+      }
+
+      &.disabled {
+        color: lighten($org-base-color, 13%);
+      }
+    }
+
+    .character-counter__wrapper {
+      .character-counter {
+        color: lighten($org-base-color, 12%);
+      }
+    }
+  }
+}
