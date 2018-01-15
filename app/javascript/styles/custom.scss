@@ -1,12 +1,14 @@
 
-//$classic-base-color: #300;  // red
-//$classic-base-color: #030;  // green
-//$classic-base-color: #330;  // yellow
-//$classic-base-color: #003;  // blue
-//$classic-base-color: #303;  // magenta
-$classic-base-color: #023;  // cyan
+$classic-base-gray: #282c37; 
 
-$ui-base-color: $classic-base-color !default;
-$ui-base-lighter-color: lighten($ui-base-color, 26%) !default;
+$classic-base-red: #300;  // red
+$classic-base-green: #030;  // green
+$classic-base-yellow: #330;  // yellow
+$classic-base-blue: #003;  // blue
+$classic-base-magenta: #303;  // magenta
+$classic-base-cyan: #023;  // cyan
+
+$ui-base-color: $classic-base-magenta !default;
+$ui-base-lighter-color: lighten($classic-base-gray, 26%) !default;
 
 @import 'application';
