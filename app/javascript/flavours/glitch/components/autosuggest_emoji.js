@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import unicodeMapping from 'flavours/glitch/util/emoji/emoji_unicode_mapping_light';
 
-const assetHost = process.env.CDN_HOST || '';
+const twemojiBase = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.1/2/svg';
 
 export default class AutosuggestEmoji extends React.PureComponent {
 
@@ -23,7 +23,7 @@ export default class AutosuggestEmoji extends React.PureComponent {
         return null;
       }
 
-      url = `${assetHost}/emoji/${mapping.filename}.svg`;
+      url = `${twemojiBase}/${mapping.filename}.svg`;
     }
 
     return (

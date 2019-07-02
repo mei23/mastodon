@@ -105,6 +105,7 @@ const mapDispatchToProps = (dispatch, { onPickEmoji }) => ({
 });
 
 const assetHost = process.env.CDN_HOST || '';
+const twemojiBase = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.1/2/svg';
 let EmojiPicker, Emoji; // load asynchronously
 
 const backgroundImageFn = () => `${assetHost}/emoji/sheet_10.png`;
@@ -440,7 +441,7 @@ export default class EmojiPickerDropdown extends React.PureComponent {
           <img
             className={classNames('emojione', { 'pulse-loading': active && loading })}
             alt='🙂'
-            src={`${assetHost}/emoji/1f602.svg`}
+            src={`${twemojiBase}/1f602.svg`}
           />
         </div>
 

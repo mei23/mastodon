@@ -4,7 +4,7 @@ import Trie from 'substring-trie';
 
 const trie = new Trie(Object.keys(unicodeMapping));
 
-const assetHost = process.env.CDN_HOST || '';
+const twemojiBase = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.1/2/svg';
 
 const emojify = (str, customEmojis = {}) => {
   const tagCharsWithoutEmojis = '<&';
@@ -60,7 +60,7 @@ const emojify = (str, customEmojis = {}) => {
     } else { // matched to unicode emoji
       const { filename, shortCode } = unicodeMapping[match];
       const title = shortCode ? `:${shortCode}:` : '';
-      replacement = `<img draggable="false" class="emojione" alt="${match}" title="${title}" src="${assetHost}/emoji/${filename}.svg" />`;
+      replacement = `<img draggable="false" class="emojione" alt="${match}" title="${title}" src="${twemojiBase}/${filename}.svg" />`;
       rend = i + match.length;
       // If the matched character was followed by VS15 (for selecting text presentation), skip it.
       if (str.codePointAt(rend) === 65038) {
